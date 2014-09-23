@@ -10,11 +10,11 @@ end
 
 
 get '/erb' do
-  name = ""
+  @name = ""
   erb :index
 end
 
-get '/post' do
-  name = "#{params[:name]}"
+post '/erb' do
+  @name = "#{params[:name]}"
   erb :index
 end
