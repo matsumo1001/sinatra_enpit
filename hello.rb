@@ -10,6 +10,7 @@ end
 
 
 get '/erb' do
+  name = ""
   erb :index
 end
 
