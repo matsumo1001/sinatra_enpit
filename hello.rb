@@ -12,3 +12,8 @@ end
 get '/erb' do
   erb :index
 end
+
+get '/post' do
+  name = "#{params[:name]}"
+  erb :index
+end
