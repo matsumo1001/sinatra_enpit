@@ -7,3 +7,8 @@ end
 get '/:name' do
   "Hello #{params[:name]}!"
 end
+
+
+get '/erb' do
+  erb :index
+end
